@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/ic_home"
+        android:title="Beranda" />
+
+    <item
+        android:id="@+id/nav_profile"
+        android:icon="@drawable/ic_menu"
+        android:title="Info Kontak" />
+
+    <item
+        android:id="@+id/action_web"
+        android:icon="@drawable/ic_web"
+        android:title="Halodoc" />
+
+    <item
+        android:id="@+id/action_logout"
+        android:icon="@drawable/ic_out"
+        android:title="Log Out" />
+
+</menu>
