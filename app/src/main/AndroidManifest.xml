@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <!-- Izin Internet untuk WebView -->
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
@@ -12,7 +11,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Projek_Alini">
 
-        <!-- 1. SplashScreenActivity sebagai Launcher utama -->
         <activity
             android:name=".SplashScreenActivity"
             android:exported="true">
@@ -22,23 +20,23 @@
             </intent-filter>
         </activity>
 
-        <!-- 2. LoginActivity -->
+        <activity
+            android:name=".tutorial.TutorialActivity"
+            android:exported="false" />
+
         <activity
             android:name=".LoginActivity"
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
 
-        <!-- 3. MainActivity -->
         <activity
             android:name=".MainActivity"
             android:exported="false" />
 
-        <!-- 4. DetailActivity -->
         <activity
             android:name=".DetailActivity"
             android:exported="false" />
 
-        <!-- 5. ActivityWebView -->
         <activity
             android:name=".ActivityWebView"
             android:exported="false"

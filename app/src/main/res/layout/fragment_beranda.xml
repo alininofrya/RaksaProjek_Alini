@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:id="@+id/background_header"
+            android:layout_width="0dp"
+            android:layout_height="160dp"
+            android:background="@drawable/bg_header_wave"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="8dp"
+            android:text="Kondisi Darurat"
+            android:textColor="@color/navy"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/background_header" />
+
+        <androidx.gridlayout.widget.GridLayout
+            android:id="@+id/gridKondisi"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            app:columnCount="2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvLabel"
+            app:useDefaultMargins="true">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnPingsan"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/raksa_green"
+                android:text="Pingsan"
+                android:textColor="@color/white"
+                app:icon="@drawable/ic_plus"
+                app:iconGravity="top"
+                app:layout_columnWeight="1"
+                app:layout_gravity="fill_horizontal" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnLuka"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#E63946"
+                android:text="Luka / Pendarahan"
+                android:textColor="@color/white"
+                app:icon="@drawable/ic_plus"
+                app:iconGravity="top"
+                app:layout_columnWeight="1"
+                app:layout_gravity="fill_horizontal" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnBakar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#F4A261"
+                android:text="Luka Bakar"
+                android:textColor="@color/white"
+                app:icon="@drawable/ic_plus"
+                app:iconGravity="top"
+                app:layout_columnWeight="1"
+                app:layout_gravity="fill_horizontal" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnTersedak"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/navy"
+                android:text="Tersedak"
+                android:textColor="@color/white"
+                app:icon="@drawable/ic_plus"
+                app:iconGravity="top"
+                app:layout_columnWeight="1"
+                app:layout_gravity="fill_horizontal" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnKeseleo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/raksa_blue"
+                android:text="Keseleo"
+                android:textColor="@color/white"
+                app:icon="@drawable/ic_plus"
+                app:iconGravity="top"
+                app:layout_columnWeight="1"
+                app:layout_gravity="fill_horizontal" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnKecelakaan"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#B3202D"
+                android:text="Kecelakaan Ringan"
+                android:textColor="@color/white"
+                app:icon="@drawable/ic_plus"
+                app:iconGravity="top"
+                app:layout_columnWeight="1"
+                app:layout_gravity="fill_horizontal" />
+        </androidx.gridlayout.widget.GridLayout>
+
+        <TextView
+            android:id="@+id/tvDisclaimer"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="#FFF3E6"
+            android:padding="12dp"
+            android:text="Panduan awal, bukan pengganti tenaga medis. Hubungi 112 bila parah."
+            android:textColor="@color/gray_text"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/gridKondisi" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="107dp"
+            android:layout_height="98dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="@+id/background_header"
+            app:layout_constraintHorizontal_bias="0.947"
+            app:layout_constraintStart_toStartOf="@+id/background_header"
+            app:layout_constraintTop_toTopOf="@+id/background_header"
+            app:srcCompat="@drawable/logo_raksa" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
