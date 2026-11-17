@@ -9,6 +9,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.example.projek_alini.DetailActivity
 import com.example.projek_alini.databinding.FragmentBerandaBinding
+import com.example.projek_alini.informasi.InformasiActivity
 import com.google.android.material.snackbar.Snackbar
 
 class BerandaFragment : Fragment() {
@@ -25,6 +26,11 @@ class BerandaFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         Log.d("BerandaFragment", "Fragment Beranda dimuat")
+
+        binding.btnInformasi.setOnClickListener {
+            val intent = Intent(requireContext(), InformasiActivity::class.java)
+            startActivity(intent)
+        }
 
         val menu = mapOf(
             binding.btnPingsan to "Pingsan",
