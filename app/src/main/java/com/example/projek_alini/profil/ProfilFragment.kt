@@ -23,7 +23,10 @@ class ProfilFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         val pref = requireActivity().getSharedPreferences("UserSession", Context.MODE_PRIVATE)
-        binding.tvNama.text = pref.getString("nama", "Pengguna Tamu")
+        val nama = pref.getString("nama", "Pengguna Tamu") ?: "Pengguna Tamu"
+        binding.tvNama.text = nama
+        binding.tvInisial.text = nama.first().uppercase()
+        binding.tvStatus.text = if (nama == "Pengguna Tamu") "Mode Tamu" else "Pengguna RAKSA"
 
         binding.btnKeluar.setOnClickListener {
             (requireActivity() as MainActivity).showLogoutDialog()
