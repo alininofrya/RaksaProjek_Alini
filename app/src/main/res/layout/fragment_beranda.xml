@@ -42,87 +42,286 @@
             app:layout_constraintTop_toBottomOf="@id/tvLabel"
             app:useDefaultMargins="true">
 
-            <com.google.android.material.button.MaterialButton
+            <com.google.android.material.card.MaterialCardView
                 android:id="@+id/btnPingsan"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:backgroundTint="@color/raksa_green"
-                android:text="Pingsan"
-                android:textColor="@color/white"
-                app:icon="@drawable/ic_plus"
-                app:iconGravity="top"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="4dp"
                 app:layout_columnWeight="1"
-                app:layout_gravity="fill_horizontal" />
+                app:layout_gravity="fill_horizontal">
 
-            <com.google.android.material.button.MaterialButton
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:layout_width="56dp"
+                        android:layout_height="56dp"
+                        android:background="@drawable/bg_circle"
+                        android:backgroundTint="@color/raksa_green"
+                        android:contentDescription="Pingsan"
+                        android:padding="14dp"
+                        android:src="@drawable/ic_pingsan" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:text="Pingsan"
+                        android:textColor="@color/navy"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
                 android:id="@+id/btnLuka"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:backgroundTint="#E63946"
-                android:text="Luka / Pendarahan"
-                android:textColor="@color/white"
-                app:icon="@drawable/ic_plus"
-                app:iconGravity="top"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="4dp"
                 app:layout_columnWeight="1"
-                app:layout_gravity="fill_horizontal" />
+                app:layout_gravity="fill_horizontal">
 
-            <com.google.android.material.button.MaterialButton
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:layout_width="56dp"
+                        android:layout_height="56dp"
+                        android:background="@drawable/bg_circle"
+                        android:backgroundTint="#E63946"
+                        android:contentDescription="Luka / Pendarahan"
+                        android:padding="14dp"
+                        android:src="@drawable/ic_luka" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:text="Luka / Pendarahan"
+                        android:textColor="@color/navy"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
                 android:id="@+id/btnBakar"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:backgroundTint="#F4A261"
-                android:text="Luka Bakar"
-                android:textColor="@color/white"
-                app:icon="@drawable/ic_plus"
-                app:iconGravity="top"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="4dp"
                 app:layout_columnWeight="1"
-                app:layout_gravity="fill_horizontal" />
+                app:layout_gravity="fill_horizontal">
 
-            <com.google.android.material.button.MaterialButton
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:layout_width="56dp"
+                        android:layout_height="56dp"
+                        android:background="@drawable/bg_circle"
+                        android:backgroundTint="#F4A261"
+                        android:contentDescription="Luka Bakar"
+                        android:padding="14dp"
+                        android:src="@drawable/ic_bakar" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:text="Luka Bakar"
+                        android:textColor="@color/navy"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
                 android:id="@+id/btnTersedak"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:backgroundTint="@color/navy"
-                android:text="Tersedak"
-                android:textColor="@color/white"
-                app:icon="@drawable/ic_plus"
-                app:iconGravity="top"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="4dp"
                 app:layout_columnWeight="1"
-                app:layout_gravity="fill_horizontal" />
+                app:layout_gravity="fill_horizontal">
 
-            <com.google.android.material.button.MaterialButton
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:layout_width="56dp"
+                        android:layout_height="56dp"
+                        android:background="@drawable/bg_circle"
+                        android:backgroundTint="@color/navy"
+                        android:contentDescription="Tersedak"
+                        android:padding="14dp"
+                        android:src="@drawable/ic_tersedak" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:text="Tersedak"
+                        android:textColor="@color/navy"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
                 android:id="@+id/btnKeseleo"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:backgroundTint="@color/raksa_blue"
-                android:text="Keseleo"
-                android:textColor="@color/white"
-                app:icon="@drawable/ic_plus"
-                app:iconGravity="top"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="4dp"
                 app:layout_columnWeight="1"
-                app:layout_gravity="fill_horizontal" />
+                app:layout_gravity="fill_horizontal">
 
-            <com.google.android.material.button.MaterialButton
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:layout_width="56dp"
+                        android:layout_height="56dp"
+                        android:background="@drawable/bg_circle"
+                        android:backgroundTint="@color/raksa_blue"
+                        android:contentDescription="Keseleo"
+                        android:padding="14dp"
+                        android:src="@drawable/ic_keseleo" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:text="Keseleo"
+                        android:textColor="@color/navy"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
                 android:id="@+id/btnKecelakaan"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:backgroundTint="#B3202D"
-                android:text="Kecelakaan Ringan"
-                android:textColor="@color/white"
-                app:icon="@drawable/ic_plus"
-                app:iconGravity="top"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="4dp"
                 app:layout_columnWeight="1"
-                app:layout_gravity="fill_horizontal" />
-            <com.google.android.material.button.MaterialButton
+                app:layout_gravity="fill_horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:layout_width="56dp"
+                        android:layout_height="56dp"
+                        android:background="@drawable/bg_circle"
+                        android:backgroundTint="#B3202D"
+                        android:contentDescription="Kecelakaan Ringan"
+                        android:padding="14dp"
+                        android:src="@drawable/ic_kecelakaan" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:text="Kecelakaan Ringan"
+                        android:textColor="@color/navy"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
                 android:id="@+id/btnInformasi"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:backgroundTint="#3A86FF"
-                android:text="Pusat Informasi"
-                android:textColor="@color/white"
-                app:layout_columnSpan="2"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="4dp"
+            app:layout_columnSpan="2"
                 app:layout_columnWeight="1"
-                app:layout_gravity="fill_horizontal" />
+                app:layout_gravity="fill_horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:layout_width="56dp"
+                        android:layout_height="56dp"
+                        android:background="@drawable/bg_circle"
+                        android:backgroundTint="#3A86FF"
+                        android:contentDescription="Pusat Informasi"
+                        android:padding="14dp"
+                        android:src="@drawable/ic_info" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:text="Pusat Informasi"
+                        android:textColor="@color/navy"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
         </androidx.gridlayout.widget.GridLayout>
 
         <TextView
