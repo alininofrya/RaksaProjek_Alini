@@ -46,6 +46,10 @@
             android:name=".informasi.InformasiActivity"
             android:exported="false" />
 
+        <activity
+            android:name=".note.NoteFormActivity"
+            android:exported="false" />
+
     </application>
 
 </manifest>

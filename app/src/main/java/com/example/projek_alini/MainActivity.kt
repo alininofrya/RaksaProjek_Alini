@@ -18,6 +18,7 @@ import com.example.projek_alini.bantuan.BantuanFragment
 import com.example.projek_alini.beranda.BerandaFragment
 import com.example.projek_alini.cari.CariFragment
 import com.example.projek_alini.databinding.ActivityMainBinding
+import com.example.projek_alini.note.NoteFragment
 import com.example.projek_alini.profil.ProfilFragment
 
 class MainActivity : AppCompatActivity() {
@@ -83,6 +84,10 @@ class MainActivity : AppCompatActivity() {
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         return when (item.itemId) {
+            R.id.action_note -> {
+                replaceFragment(NoteFragment())
+                true
+            }
             R.id.action_web -> {
                 startActivity(Intent(this, ActivityWebView::class.java))
                 true

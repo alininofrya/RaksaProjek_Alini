@@ -1,5 +1,6 @@
 plugins {
     alias(libs.plugins.android.application)
+    id("com.google.devtools.ksp")
 }
 
 android {
@@ -53,4 +54,11 @@ dependencies {
     implementation("androidx.viewpager2:viewpager2:1.1.0")      // Tutorial
     implementation("com.tbuonomo:dotsindicator:5.1.0")          // DotsIndicator
     implementation("com.github.bumptech.glide:glide:4.16.0")
+
+    // Room Database
+    val roomVersion = "2.8.4"
+    implementation("androidx.room:room-runtime:$roomVersion")
+    implementation("androidx.room:room-ktx:$roomVersion")
+    ksp("androidx.room:room-compiler:$roomVersion")
+    implementation("androidx.recyclerview:recyclerview:1.3.2")
 }
